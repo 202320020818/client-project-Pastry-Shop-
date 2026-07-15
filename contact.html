@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact • Pastry Cake Peshala</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">Pastry Cake Peshala</a>
+      <button class="menu-btn" id="menu-btn" aria-label="Toggle navigation">
+        ☰
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="story.html">Story</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </header>
+
+    <main class="page-shell contact-layout">
+      <section>
+        <p class="eyebrow">Get in touch</p>
+        <h1>We would love to hear from you.</h1>
+        <p>
+          Share your favorite color palette, ask about gift bundles, or book a
+          visit.
+        </p>
+      </section>
+
+      <form class="contact-card" id="contact-form">
+        <input type="text" id="name" placeholder="Your name" required />
+        <input type="email" id="email" placeholder="Your email" required />
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Tell us what you are looking for"
+          required
+        ></textarea>
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <p id="form-status" class="status-text"></p>
+      </form>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Pastry Cake Peshala</p>
+      <p>Response time is usually within one business day.</p>
+    </footer>
+  </body>
+</html>
